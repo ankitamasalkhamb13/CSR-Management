@@ -1,0 +1,22 @@
+
+            body{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+                background-color: #ffffff;
+                padding: 74px;
+            }
+            #head{
+                font-size: 30px;
+                
+                text-align: center;
+            }
+
+            .padding{
+                margin-top: 2px;
+            }
+            .full-width{
+                width: 100%;;
+            }
+            .space{
+                margin-left: 200px;
+            }

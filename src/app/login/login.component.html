@@ -1,0 +1,35 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <mat-card>
+        <div class="container text-center">
+          <img src="../../assets/user3.png" alt="">
+        </div>
+        <h1 class="text-center">Login Here</h1>
+        <form>
+          
+          <!-- User email field -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Enter Here" name="email" >
+          </mat-form-field>
+          <!-- User Password field -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Enter Here" name="password">
+          </mat-form-field>
+
+          <div class="container text-center">
+            <a >Forgot your password?</a><br><br>
+            <button mat-raised-button color="primary">Login</button>
+            <button class="space" mat-raised-button color="accent">Reset</button><br><br>
+            <a (click)="registration()" >New User ? Click Here to Register</a>
+          </div>
+         
+        </form>
+      </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

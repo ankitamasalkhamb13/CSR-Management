@@ -1,0 +1,78 @@
+<div class="bootstrap-wrapper" >
+    <div class="container" style="margin-left: 100px;">
+      <div class="row" >
+        <div class="col-md-6 offset-md-3">
+          <mat-card>
+            <form (ngSubmit)="formSubmit()">
+            <div class="row form group">
+              
+                <p id="head">Create New Event</p>
+                <label for="Event Name">Event Name</label>
+                <input type="text" id="ename" name="ename" class="form-control" placeholder="Enter Event Name">
+              </div><br>
+            <div class=" row form group">
+              <label for="description">Description</label>
+              <textarea name="description" id="description" class="form-control" cols="30" rows="5"></textarea>
+            </div><br>
+            <div class="row form group">
+                <div class="col-sm-6">
+                    <label for="start date">Event Start Date</label>
+                    <input type="date" id="edate" name="edate" class="form-control" placeholder="Select Event Date"><br>
+
+                </div><br>
+                <div class="col-sm-6">
+                    <label for="start time">Event Start Time</label>
+                    <input type="time" id="etime" name="etime" class="form-control" placeholder="Select Event Time"><br>
+                </div><br>
+            </div>
+            <div class="row form group">
+                <div class="col-sm-6">
+                    <label for="end date">Event End Date</label>
+                    <input type="date" id="edate" name="edate" class="form-control" placeholder="Select Event Date"><br>
+                </div><br><br>
+                <div class="col-sm-6">
+                    <label for="end time">Event End Time</label>
+                    <input type="time" id="etime" name="etime" class="form-control" placeholder="Select Event Time"><br>
+                </div><br>
+            </div>
+            <div class="row form group">
+                <div class="col-sm-6">
+                    <label for="Capacity">Capacity</label>
+                    <input type="number" id="capacity" name="capacity" class="form-control" placeholder="Select Capacity"><br>
+                </div><br>
+                <div class="col-sm-6">
+                    <label for="Company Name">Criteria</label>
+                    <select name="criteria" id="criteria" class="form-control">
+                        <option value="0">Select Criteria</option>
+                        <option value="1">First Come First Serve</option>
+                        <option value="2">Age above 25</option>
+                    </select>
+                </div><br>
+            </div>
+            <div class="form group">
+                <label for="location">Location</label>
+                <textarea name="location" id="location" class="form-control" cols="30" rows="5"></textarea>
+            </div><br>
+            <div class="row form group">
+                <label for="location">City</label>
+                <select  name="city" class="form-control">
+                    <option value="">Select City</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                  </select>
+            </div><br>
+            <div class="row form group">
+                <div class="col-sm-6">
+                    <button type = "submit" mat-raised-button color="primary" style="margin-left: 200px;">Create Event</button>
+                </div>
+                
+            </div>
+        </form>
+        </mat-card>
+    
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
